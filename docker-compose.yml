@@ -1,26 +1,10 @@
-# Roulettech/docker-compose.yml
-version: '3.8'
+version: '3'
 
 services:
-  db:
-    image: postgres:13
-    volumes:
-      - postgres_data:/var/lib/postgresql/data/
-    environment:
-      POSTGRES_DB: roulettech-database
-      POSTGRES_USER: kvuser
-      POSTGRES_PASSWORD: password
-
   web:
-    build: 
-      context: ./rt_backend
-    command: python manage.py runserver 0.0.0.0:8000
+    build: .
+    command: python rt_backend/manage.py runserver 0.0.0.0:8000
     volumes:
-      - ./rt_backend:/code
+      - .:/code
     ports:
       - "8000:8000"
-    depends_on:
-      - db
-
-volumes:
-  postgres_data:
