@@ -12,8 +12,9 @@ services:
       POSTGRES_PASSWORD: password
 
   web:
-    build: ./rt_backend
-    command: gunicorn rt_backend.wsgi:application --bind 0.0.0.0:8000
+    build: 
+      context: ./rt_backend
+    command: python manage.py runserver 0.0.0.0:8000
     volumes:
       - ./rt_backend:/code
     ports:

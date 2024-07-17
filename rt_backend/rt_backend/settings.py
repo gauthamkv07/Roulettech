@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-!8yj*r(_vg6zk748cm@6lsn8432#y+wy)15a!*t+9e5&!exxo%
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
@@ -77,8 +77,12 @@ WSGI_APPLICATION = 'rt_backend.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'roulettech-database',
+        'USER': 'kvuser',
+        'PASSWORD': 'password',
+        'HOST': 'db',
+        'PORT': 5432,
     }
 }
 
