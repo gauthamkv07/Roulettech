@@ -27,7 +27,7 @@ The backend application is hosted on AWS EC2 using Docker, and the frontend appl
 
 ## Architecture
 
-![Architecture Diagram](URL_TO_YOUR_IMAGE)
+![Architecture Diagram](https://github.com/gauthamkv07/Roulettech/blob/main/architecture.jpg)
 
 ## Backend Application
 
