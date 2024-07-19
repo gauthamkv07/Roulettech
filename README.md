@@ -54,7 +54,3 @@ The backend application is hosted on AWS EC2 using Docker, and the frontend appl
 ## Conclusion
 
 With this setup, the full-stack application was successfully developed and deployed. It was a rewarding experience and a great opportunity to learn and create something new. I’m pleased with the outcome and thrilled to see the application fully operational.
-
----
-
-Feel free to customize and expand this README based on your specific needs and any additional details you'd like to include.
