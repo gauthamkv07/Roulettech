@@ -42,8 +42,6 @@ The backend application is hosted on AWS EC2 using Docker, and the frontend appl
 
 **Note**: Enabling HTTP on the Bastion Host exposes it to potential security vulnerabilities. Best practices would include using a load balancer or other secure methods for accessing the application, setting up a single private subnet, using a NAT Gateway for internet access, and creating a Virtual Private Gateway for secure access.
 
-**API Endpoints**: Only one API endpoint was created instead of the required two.
-
 ## Frontend Application
 
 1. **Build**: Used npm to build the project, which generated a `build` directory.
